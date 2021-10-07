@@ -1,7 +1,7 @@
 ---
 title: 'Biến Ngẫu nhiên là gì dưới góc nhìn lý thuyết xác xuất hiện đại'
-date: 2199-01-01
-permalink: /posts/2012/08/blog-post-4/
+date: 2021-10-06
+permalink: /posts/2021/06/blog-post-4/
 tags:
   - random variable
   - intuition
