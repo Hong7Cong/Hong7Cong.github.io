@@ -81,7 +81,7 @@ analytics:
 # Site Author
 author:
   name             : "Hong Tien Nguyen"
-  avatar           : "profile.png"
+  avatar           : "https://media-exp1.licdn.com/dms/image/C5603AQHug3KfAjNULA/profile-displayphoto-shrink_800_800/0/1618541746031?e=1639008000&v=beta&t=JuMt-bL8TPvVdGfNkOZW3pZ4gP3pe-EZoLzucJb5eF4"
   bio              : "Your biography for the left-hand sidebar"
   location         : "Los Angeles"
   employer         :
