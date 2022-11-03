@@ -81,7 +81,7 @@ analytics:
 # Site Author
 author:
   name             : "Hong Tien Nguyen"
-  avatar           : "https://media-exp1.licdn.com/dms/image/C5603AQHug3KfAjNULA/profile-displayphoto-shrink_800_800/0/1618541746031?e=1639008000&v=beta&t=JuMt-bL8TPvVdGfNkOZW3pZ4gP3pe-EZoLzucJb5eF4"
+  avatar           : "https://scholar.googleusercontent.com/citations?view_op=view_photo&user=9OlFAGwAAAAJ&citpid=6"
   bio              : "Ph.D. student at University of Southern California"
   location         : "Los Angeles, CA 90037"
   employer         :
@@ -102,7 +102,7 @@ author:
   instagram        :
   impactstory      : #"https://profiles.impactstory.org/u/xxxx-xxxx-xxxx-xxxx"
   lastfm           :
-  linkedin         : "https://www.linkedin.com/in/hong-nguyen-19b9161b9/"
+  linkedin         : "hong-nguyen-19b9161b9"
   orcid            : #"http://orcid.org/yourorcidurl"
   pinterest        :
   soundcloud       :
@@ -113,7 +113,7 @@ author:
   vine             :
   weibo            :
   xing             :
-  youtube          : "https://www.youtube.com/channel/UCZA9EwlkRxtSc-r8kNRS_bQ"
+  youtube          : #"https://www.youtube.com/channel/UCZA9EwlkRxtSc-r8kNRS_bQ"
   wikipedia        :
 
 
@@ -210,14 +210,14 @@ defaults:
       layout: single
       author_profile: true
   # _teaching
-  - scope:
-      path: ""
-      type: teaching
-    values:
-      layout: single
-      author_profile: true
-      share: true
-      comments: true
+  # - scope:
+  #     path: ""
+  #     type: teaching
+  #   values:
+  #     layout: single
+  #     author_profile: true
+  #     share: true
+  #     comments: true
   # _publications
   - scope:
       path: ""
@@ -237,13 +237,13 @@ defaults:
       share: true
       comment: true
   # _talks
-  - scope:
-      path: ""
-      type: talks
-    values:
-      layout: talk
-      author_profile: true
-      share: true
+  # - scope:
+  #     path: ""
+  #     type: talks
+  #   values:
+  #     layout: talk
+  #     author_profile: true
+  #     share: true
 
 # Sass/SCSS
 sass:
