@@ -20,3 +20,5 @@ Personal interest
 ======
 I like hiking, playing boardgame (Level of difficult 3+/5).
 
+Contact me: hongn@usc.edu
+
