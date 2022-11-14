@@ -21,4 +21,4 @@ the bias of anomaly types to deep detectors, time-performance trade-offs, shorta
 data, and effects of weakly labeled data on both synthetic and real-world datasets to
 fill out the missing insights in the literature.
 
-[Download paper here](http://academicpages.github.io/files/MTSNetwork_ICOIN.pdf)
+[Download paper here](http://hong7cong.github.io/files/MTSNetwork_ICOIN.pdf)
