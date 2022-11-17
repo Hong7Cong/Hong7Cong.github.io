@@ -8,6 +8,4 @@ date: 2009-10-01
 # paperurl: 'https://scholar.google.com/citations?user=9OlFAGwAAAAJ&hl=en'
 # citation: 'Your Name, You. (2009). &quot;Paper Title Number 1.&quot; <i>Journal 1</i>. 1(1).'
 ---
-You can find all of my papers here:
-
-[google scholar](https://scholar.google.com/citations?user=9OlFAGwAAAAJ&hl=en)
+You can find all of my papers here: [google scholar](https://scholar.google.com/citations?user=9OlFAGwAAAAJ&hl=en)
