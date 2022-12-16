@@ -7,7 +7,7 @@
 
 # Site Settings
 locale                   : "en-US"
-title                    : "Honginla's Homepage"
+title                    : "Hong's Homepage"
 title_separator          : "-"
 name                     : &name "Hong Tien Nguyen"
 description              : &description "personal description"
@@ -80,7 +80,7 @@ analytics:
 
 # Site Author
 author:
-  name             : "Hong Tien Nguyen"
+  name             : "Hong (Tien) Nguyen"
   avatar           : "https://scholar.googleusercontent.com/citations?view_op=view_photo&user=9OlFAGwAAAAJ&citpid=6"
   bio              : "Ph.D. student at University of Southern California"
   location         : "Los Angeles, CA 90037"

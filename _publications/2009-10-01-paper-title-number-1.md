@@ -1,7 +1,7 @@
 ---
 title: "My google scholar"
 collection: publications
-permalink: /publication/2009-10-01-paper-title-number-1
+permalink: https://scholar.google.com/citations?user=9OlFAGwAAAAJ&hl=en #/publication/2009-10-01-paper-title-number-1
 excerpt: 'You can find all of my papers here'
 date: 2009-10-01
 # venue: 'Journal 1'
