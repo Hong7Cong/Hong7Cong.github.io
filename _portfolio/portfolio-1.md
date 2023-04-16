@@ -22,3 +22,5 @@ data, and effects of weakly labeled data on both synthetic and real-world datase
 fill out the missing insights in the literature.
 
 [Download paper here](http://hong7cong.github.io/files/MTSNetwork_ICOIN.pdf)
+
+[Link to books](http://hong7cong.github.io/files/_book/intro.html)
