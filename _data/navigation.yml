@@ -6,13 +6,13 @@ main:
   # - title: "Talks"
   #   url: /talks/    
 
-  - title: "Book"
+  - title: "Tech Blog"
     url: /book/    
     
   - title: "Projects"
     url: /portfolio/
         
-  - title: "Blog Posts"
+  - title: "Personal Blog"
     url: /year-archive/
     
   - title: "CV"
