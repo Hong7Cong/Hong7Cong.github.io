@@ -160,19 +160,25 @@ div.csl-indent {
 <li class="divider"></li>
 <li class="chapter" data-level="1" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i><b>1</b> Prerequisites</a></li>
 <li class="chapter" data-level="2" data-path="intro.html"><a href="intro.html"><i class="fa fa-check"></i><b>2</b> Introduction</a></li>
-<li class="chapter" data-level="3" data-path="motivations.html"><a href="motivations.html"><i class="fa fa-check"></i><b>3</b> Motivations</a></li>
+<li class="chapter" data-level="3" data-path="motivations.html"><a href="motivations.html"><i class="fa fa-check"></i><b>3</b> Motivations</a>
+<ul>
+<li class="chapter" data-level="3.1" data-path="motivations.html"><a href="motivations.html#context"><i class="fa fa-check"></i><b>3.1</b> Context</a></li>
+<li class="chapter" data-level="3.2" data-path="motivations.html"><a href="motivations.html#problem-statement"><i class="fa fa-check"></i><b>3.2</b> Problem statement</a></li>
+</ul></li>
 <li class="chapter" data-level="4" data-path="images-comparison.html"><a href="images-comparison.html"><i class="fa fa-check"></i><b>4</b> Images Comparison</a>
 <ul>
 <li class="chapter" data-level="4.1" data-path="images-comparison.html"><a href="images-comparison.html#siaseme-network"><i class="fa fa-check"></i><b>4.1</b> Siaseme Network</a></li>
 <li class="chapter" data-level="4.2" data-path="images-comparison.html"><a href="images-comparison.html#flow-vectors"><i class="fa fa-check"></i><b>4.2</b> Flow vectors</a></li>
 </ul></li>
-<li class="chapter" data-level="5" data-path="explain-image-compairison.html"><a href="explain-image-compairison.html"><i class="fa fa-check"></i><b>5</b> Explain Image Compairison</a>
+<li class="chapter" data-level="5" data-path="explain-pair-wise-comparison.html"><a href="explain-pair-wise-comparison.html"><i class="fa fa-check"></i><b>5</b> Explain Pair-wise Comparison</a>
 <ul>
-<li class="chapter" data-level="5.1" data-path="explain-image-compairison.html"><a href="explain-image-compairison.html#plime"><i class="fa fa-check"></i><b>5.1</b> pLIME</a></li>
-<li class="chapter" data-level="5.2" data-path="explain-image-compairison.html"><a href="explain-image-compairison.html#example-two"><i class="fa fa-check"></i><b>5.2</b> Example two</a></li>
+<li class="chapter" data-level="5.1" data-path="explain-pair-wise-comparison.html"><a href="explain-pair-wise-comparison.html#p-lime"><i class="fa fa-check"></i><b>5.1</b> p-LIME</a></li>
+<li class="chapter" data-level="5.2" data-path="explain-pair-wise-comparison.html"><a href="explain-pair-wise-comparison.html#pgradcam"><i class="fa fa-check"></i><b>5.2</b> pGradCAM</a></li>
 </ul></li>
 <li class="chapter" data-level="6" data-path="final-words.html"><a href="final-words.html"><i class="fa fa-check"></i><b>6</b> Final Words</a></li>
+<li class="chapter" data-level="7" data-path="explain-pair-wise-comparison-1.html"><a href="explain-pair-wise-comparison-1.html"><i class="fa fa-check"></i><b>7</b> Explain pair-wise comparison</a></li>
 <li class="chapter" data-level="" data-path="references.html"><a href="references.html"><i class="fa fa-check"></i>References</a></li>
+<li class="chapter" data-level="8" data-path="results.html"><a href="results.html"><i class="fa fa-check"></i><b>8</b> Results</a></li>
 <li class="divider"></li>
 <li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
 
@@ -195,12 +201,19 @@ div.csl-indent {
             <section class="normal" id="section-">
 <div id="motivations" class="section level1 hasAnchor" number="3">
 <h1><span class="header-section-number">Chapter 3</span> Motivations<a href="motivations.html#motivations" class="anchor-section" aria-label="Anchor link to header"></a></h1>
-<p>In this section, we draw a big picture and define our ranking problems and sub-problems through the thinking flow of the authors. You may have different approaches. Feel free to think differently. Before diving into severity ranking, let review what is learn-to-rank in machine learning.</p>
-<p>“Any system that presents results to a user, ordered by a utility function that the user cares about, is performing a ranking function” - Learning to Rank using Gradient Descent, ICML</p>
-<p>In our particular case, the results are list of images and the utility function measure how severe an image is.
-## Problem statement</p>
-<p>Given a list of images ()</p>
+<p>In this section, we draw a big picture and define our ranking problems and sub-problems through the thinking flow of the authors. You may have different approaches. Feel free to think differently.</p>
+<div id="context" class="section level2 hasAnchor" number="3.1">
+<h2><span class="header-section-number">3.1</span> Context<a href="motivations.html#context" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>Imagine that you are given a list of images, you will have to order the images base
+Before diving into severity ranking, let review what is learn-to-rank in machine learning.</p>
+<p>“Any system that presents results to a user, ordered by a utility function that the user cares about, is performing a ranking function” - Learning to Rank using Gradient Descent, ICML.</p>
+<p>In our particular case, the results are list of images and the utility function measure how severe an image is. Here, the annotation and concept may a little bit different from learn-to-rank by search engine. So, people who familiar with learn-to-rank for search engine may find this confuse.</p>
+</div>
+<div id="problem-statement" class="section level2 hasAnchor" number="3.2">
+<h2><span class="header-section-number">3.2</span> Problem statement<a href="motivations.html#problem-statement" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>Given a list of images</p>
 
+</div>
 </div>
             </section>
 
