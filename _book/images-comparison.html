@@ -4,18 +4,18 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>Chapter 4 Images Comparison | Image Comparasion Blog</title>
+  <title>Chapter 4 Images Comparison | Toward Severity Ranking</title>
   <meta name="description" content="This is a minimal example of using the bookdown package to write a book. The output format for this example is bookdown::gitbook." />
   <meta name="generator" content="bookdown 0.33 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="Chapter 4 Images Comparison | Image Comparasion Blog" />
+  <meta property="og:title" content="Chapter 4 Images Comparison | Toward Severity Ranking" />
   <meta property="og:type" content="book" />
   
   <meta property="og:description" content="This is a minimal example of using the bookdown package to write a book. The output format for this example is bookdown::gitbook." />
   <meta name="github-repo" content="rstudio/bookdown-demo" />
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="Chapter 4 Images Comparison | Image Comparasion Blog" />
+  <meta name="twitter:title" content="Chapter 4 Images Comparison | Toward Severity Ranking" />
   
   <meta name="twitter:description" content="This is a minimal example of using the bookdown package to write a book. The output format for this example is bookdown::gitbook." />
   
@@ -23,7 +23,7 @@
 <meta name="author" content="Hong Nguyen" />
 
 
-<meta name="date" content="2023-04-19" />
+<meta name="date" content="2023-04-24" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -155,7 +155,7 @@ div.csl-indent {
       <nav role="navigation">
 
 <ul class="summary">
-<li><a href="./">A Minimal Book Example</a></li>
+<li><a href="./">Severity Ranking</a></li>
 
 <li class="divider"></li>
 <li class="chapter" data-level="1" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i><b>1</b> Prerequisites</a></li>
@@ -167,8 +167,9 @@ div.csl-indent {
 </ul></li>
 <li class="chapter" data-level="4" data-path="images-comparison.html"><a href="images-comparison.html"><i class="fa fa-check"></i><b>4</b> Images Comparison</a>
 <ul>
-<li class="chapter" data-level="4.1" data-path="images-comparison.html"><a href="images-comparison.html#siaseme-network"><i class="fa fa-check"></i><b>4.1</b> Siaseme Network</a></li>
-<li class="chapter" data-level="4.2" data-path="images-comparison.html"><a href="images-comparison.html#flow-vectors"><i class="fa fa-check"></i><b>4.2</b> Flow vectors</a></li>
+<li class="chapter" data-level="4.1" data-path="images-comparison.html"><a href="images-comparison.html#preliminary"><i class="fa fa-check"></i><b>4.1</b> Preliminary</a></li>
+<li class="chapter" data-level="4.2" data-path="images-comparison.html"><a href="images-comparison.html#siaseme-network"><i class="fa fa-check"></i><b>4.2</b> Siaseme Network</a></li>
+<li class="chapter" data-level="4.3" data-path="images-comparison.html"><a href="images-comparison.html#flow-vectors-special-case"><i class="fa fa-check"></i><b>4.3</b> Flow vectors (Special Case)</a></li>
 </ul></li>
 <li class="chapter" data-level="5" data-path="explain-pair-wise-comparison.html"><a href="explain-pair-wise-comparison.html"><i class="fa fa-check"></i><b>5</b> Explain Pair-wise Comparison</a>
 <ul>
@@ -180,7 +181,7 @@ div.csl-indent {
 <li class="chapter" data-level="" data-path="references.html"><a href="references.html"><i class="fa fa-check"></i>References</a></li>
 <li class="chapter" data-level="8" data-path="results.html"><a href="results.html"><i class="fa fa-check"></i><b>8</b> Results</a></li>
 <li class="divider"></li>
-<li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
+<li><a href="https://hong7cong.github.io/" target="blank">Return to homepage</a></li>
 
 </ul>
 
@@ -191,7 +192,7 @@ div.csl-indent {
       <div class="body-inner">
         <div class="book-header" role="navigation">
           <h1>
-            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Image Comparasion Blog</a>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Toward Severity Ranking</a>
           </h1>
         </div>
 
@@ -201,10 +202,14 @@ div.csl-indent {
             <section class="normal" id="section-">
 <div id="images-comparison" class="section level1 hasAnchor" number="4">
 <h1><span class="header-section-number">Chapter 4</span> Images Comparison<a href="images-comparison.html#images-comparison" class="anchor-section" aria-label="Anchor link to header"></a></h1>
-<p>We describe our methods in this chapter.</p>
-<p>Math can be added in body using usual syntax like this</p>
-<div id="siaseme-network" class="section level2 hasAnchor" number="4.1">
-<h2><span class="header-section-number">4.1</span> Siaseme Network<a href="images-comparison.html#siaseme-network" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>We describe our approaches in this chapter. We will explain the concepts using example of medical images.</p>
+<div id="preliminary" class="section level2 hasAnchor" number="4.1">
+<h2><span class="header-section-number">4.1</span> Preliminary<a href="images-comparison.html#preliminary" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>Definition 1 (Comparison labels): A comparison label defines a <strong>greater</strong> or <strong>less</strong> operation between two objects with respect to some pre-defined criteria.</p>
+<p>For instance, John and Alice both have brain tumors. The doctor scans images of their brain by MRT and says that John’s health condition is more severe than Alice’s condition. Thus, the MRT-brain images of John are more severe than Alice’s. In other words, John’s image is greater than Alice’s in the sense of tumor severity. Remember that the definition of comparison labels in this document (greater/less than) is different from the definition in learn-to-rank for search engines (similar/dissimilar). If you are familiar with search engines, then this may confuse you.</p>
+</div>
+<div id="siaseme-network" class="section level2 hasAnchor" number="4.2">
+<h2><span class="header-section-number">4.2</span> Siaseme Network<a href="images-comparison.html#siaseme-network" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <!-- $p$ is unknown but expected to be around 1/3. Standard error will be approximated -->
 <!-- $$ -->
 <!-- SE = \sqrt(\frac{p(1-p)}{n}) \approx \sqrt{\frac{1/3 (1 - 1/3)} {300}} = 0.027 -->
@@ -216,8 +221,9 @@ div.csl-indent {
 <!--     SE = \sqrt(\frac{p(1-p)}{n}) \approx \sqrt{\frac{1/3 (1 - 1/3)} {300}} = 0.027 -->
 <!--     $$ -->
 </div>
-<div id="flow-vectors" class="section level2 hasAnchor" number="4.2">
-<h2><span class="header-section-number">4.2</span> Flow vectors<a href="images-comparison.html#flow-vectors" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<div id="flow-vectors-special-case" class="section level2 hasAnchor" number="4.3">
+<h2><span class="header-section-number">4.3</span> Flow vectors (Special Case)<a href="images-comparison.html#flow-vectors-special-case" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>In this subsection, we will investigate a special case of comparison. We consider images of the same object, same angle but taken at different times. For instance, an OCT fundus images from the healthy state to the point when the patient got glaucoma.</p>
 
 </div>
 </div>
