@@ -1,0 +1,16 @@
+# Motivations
+
+In this section, we draw a big picture and define our ranking problems and sub-problems through the thinking flow of the authors. You may have different approaches. Feel free to think differently.
+
+## Context
+
+Imagine that you are given a list of images, you will have to order the images base
+Before diving into severity ranking, let review what is learn-to-rank in machine learning.
+
+"Any system that presents results to a user, ordered by a utility function that the user cares about, is performing a ranking function" - Learning to Rank using Gradient Descent, ICML.
+
+In our particular case, the results are list of images and the utility function measure how severe an image is. Here, the annotation and concept may a little bit different from learn-to-rank by search engine. So, people who familiar with learn-to-rank for search engine may find this confuse.
+
+## Problem statement
+
+Given a list of images

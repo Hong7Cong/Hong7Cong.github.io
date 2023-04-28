@@ -1,0 +1,3 @@
+# Explain pair-wise comparison
+
+This section will explain pair of images from pair-wise comparison model.

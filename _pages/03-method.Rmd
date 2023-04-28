@@ -1,0 +1,35 @@
+# Images Comparison
+
+We describe our approaches in this chapter. We will explain the concepts using example of medical images.
+
+## Preliminary
+
+Definition 1 (Comparison labels): A comparison label defines a **greater** or **less** operation between two objects with respect to some pre-defined criteria.
+
+For instance, John and Alice both have brain tumors. The doctor scans images of their brain by MRT and says that John's health condition is more severe than Alice's condition. Thus, the MRT-brain images of John are more severe than Alice's. In other words, John's image is greater than Alice's in the sense of tumor severity. Remember that the definition of comparison labels in this document (greater/less than) is different from the definition in learn-to-rank for search engines (similar/dissimilar). If you are familiar with search engines, then this may confuse you.
+
+## Siaseme Network
+
+<!-- $p$ is unknown but expected to be around 1/3. Standard error will be approximated -->
+
+<!-- $$ -->
+
+<!-- SE = \sqrt(\frac{p(1-p)}{n}) \approx \sqrt{\frac{1/3 (1 - 1/3)} {300}} = 0.027 -->
+
+<!-- $$ -->
+
+<!-- You can also use math in footnotes like this^[where we mention $p = \frac{a}{b}$]. -->
+
+<!-- We will approximate standard error to 0.027[^longnote] -->
+
+<!-- [^longnote]: $p$ is unknown but expected to be around 1/3. Standard error will be approximated -->
+
+<!--     $$ -->
+
+<!--     SE = \sqrt(\frac{p(1-p)}{n}) \approx \sqrt{\frac{1/3 (1 - 1/3)} {300}} = 0.027 -->
+
+<!--     $$ -->
+
+## Flow vectors (Special Case)
+
+In this subsection, we will investigate a special case of comparison. We consider images of the same object, same angle but taken at different times. For instance, an OCT fundus images from the healthy state to the point when the patient got glaucoma.

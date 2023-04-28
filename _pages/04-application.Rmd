@@ -1,0 +1,9 @@
+# Explain Pair-wise Comparison
+
+Some *significant* applications are demonstrated in this chapter. Conventionally, the current XAI method only applies to one instance at a time. For instance, the classification model inputs an image and outputs a probability list for each class. Here, we consider ranking problems where we have 2 or more inputs, and we would like to explain the decision of such ranking models based on the correlation of input images.
+
+## p-LIME
+
+In this subsection, we will talk about a user-centric explainable method for ranking models. We want to explain the mechanism of DL in a user-friendly way. The user here is not computer scientists or researchers, the end user here is people/domain experts who actually use such explanations for their jobs.
+
+## pGradCAM
