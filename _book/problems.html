@@ -4,18 +4,18 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>Chapter 2 Introduction | A Minimal Book Example</title>
+  <title>Chapter 6 Problems | A Minimal Book Example</title>
   <meta name="description" content="This is a minimal example of using the bookdown package to write a book. The output format for this example is bookdown::gitbook." />
   <meta name="generator" content="bookdown 0.33 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="Chapter 2 Introduction | A Minimal Book Example" />
+  <meta property="og:title" content="Chapter 6 Problems | A Minimal Book Example" />
   <meta property="og:type" content="book" />
   
   <meta property="og:description" content="This is a minimal example of using the bookdown package to write a book. The output format for this example is bookdown::gitbook." />
   <meta name="github-repo" content="rstudio/bookdown-demo" />
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="Chapter 2 Introduction | A Minimal Book Example" />
+  <meta name="twitter:title" content="Chapter 6 Problems | A Minimal Book Example" />
   
   <meta name="twitter:description" content="This is a minimal example of using the bookdown package to write a book. The output format for this example is bookdown::gitbook." />
   
@@ -30,8 +30,8 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   
-<link rel="prev" href="index.html"/>
-<link rel="next" href="motivations.html"/>
+<link rel="prev" href="explain-pair-wise-comparison.html"/>
+<link rel="next" href="explain-pair-wise-comparison-1.html"/>
 <script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
@@ -211,21 +211,21 @@ div.csl-indent {
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="intro" class="section level1 hasAnchor" number="2">
-<h1><span class="header-section-number">Chapter 2</span> Introduction<a href="intro.html#intro" class="anchor-section" aria-label="Anchor link to header"></a></h1>
-<p>The original idea of learning to rank is to serve the purpose of search engines. People usually use search engines as a very basic example of learning to rank due to their simple idea and explanation. However, there is some case that L2R apply to but have not been mentioned very much in the literature. In this short article, I will talk about Learning to Rank beyond Search Engines. Concretely, we can learn to rank without explicit query. Firstly, the general definition of a ranking function given by an ICML paper is stated as follows.</p>
-<p>“Any system that presents results to a user, ordered by a utility function that the user cares about, is performing a ranking function” - Learning to Rank using Gradient Descent, ICML.</p>
-<p>A common example is search engines, for example from the Web or from an intranet. For this problem, the data consists of a set of queries, and for each query, a set of returned documents. In the training phase, some query/document pairs are labeled for relevance (“excellent match”, “good match”, etc.). Only those documents returned for a given query are to be ranked against each other. Thus, rather than consisting of a single set of objects to be ranked amongst each other, the data is instead partitioned by a query. Here, the “utility function” is a query, it is an explicit function that tells the model to order documents from the most relevant documents to the least based on similarity measure.However, it is natural to think that, can we want to rank things without a query, or with implicit queries. For example, given a set of medical images, we want to order it from the most severe to the least. Is it a search engine problem? No, because no query, just have a list of documents (images). Is it a rank problem? Yes. Then what is the utility function here? The utility function is the definition of why one image is more severe than the others.</p>
-<p>You can write citations, too. For example, we are using the <strong>bookdown</strong> package <span class="citation">(<a href="#ref-R-bookdown" role="doc-biblioref">Xie 2023</a>)</span> in this sample book, which was built on top of R Markdown and <strong>knitr</strong> <span class="citation">(<a href="#ref-xie2015" role="doc-biblioref">Xie 2015</a>)</span>.</p>
+<div id="problems" class="section level1 hasAnchor" number="6">
+<h1><span class="header-section-number">Chapter 6</span> Problems<a href="problems.html#problems" class="anchor-section" aria-label="Anchor link to header"></a></h1>
+<div id="the-training-is-not-converged" class="section level2 hasAnchor" number="6.1">
+<h2><span class="header-section-number">6.1</span> The training is not converged<a href="problems.html#the-training-is-not-converged" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>I usually use one trick to figure out if there is a problem in my model or is training process. It is, take small amount of data and train the model until it overfit 100%. If it not overfit with 100% accuracy then there is something wrong with your model.</p>
+</div>
+<div id="unbalance-datassets" class="section level2 hasAnchor" number="6.2">
+<h2><span class="header-section-number">6.2</span> Unbalance datassets<a href="problems.html#unbalance-datassets" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>In the previous example, we have the unbalance dataset between Glaucoma images and Healthy images, in which the Glaucoma only take 30% of total data. This causes a problem when we are interested in the prediction of the minority class. This lead to the result that when pick a pair of sample, it is likely 2 healthy images is selected. In other words, class label in pair-wise dataset can be 90-10%.</p>
+<p><strong>Unbalance dataset can push the accuracy high due to bias in prediction (carefully check the code to select balance images pair)</strong></p>
+</div>
+<div id="unaligned-unregistered-datasets" class="section level2 hasAnchor" number="6.3">
+<h2><span class="header-section-number">6.3</span> Unaligned Unregistered datasets<a href="problems.html#unaligned-unregistered-datasets" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>In some tasks, it is critical to have perfectly registered images so that the model can easily do the work. For examples, with longtitude comparison, two images should be aligned when compare. Optic nerve should be aligned with optic nerve, blood veins should be aligned when put one images on top of the others. So that, anything changes between images are considered anomalies.</p>
 
-</div>
-<h3>References<a href="references.html#references" class="anchor-section" aria-label="Anchor link to header"></a></h3>
-<div id="refs" class="references csl-bib-body hanging-indent">
-<div id="ref-xie2015" class="csl-entry">
-Xie, Yihui. 2015. <em>Dynamic Documents with <span>R</span> and Knitr</em>. 2nd ed. Boca Raton, Florida: Chapman; Hall/CRC. <a href="http://yihui.name/knitr/">http://yihui.name/knitr/</a>.
-</div>
-<div id="ref-R-bookdown" class="csl-entry">
-———. 2023. <em>Bookdown: Authoring Books and Technical Documents with r Markdown</em>. <a href="https://CRAN.R-project.org/package=bookdown">https://CRAN.R-project.org/package=bookdown</a>.
 </div>
 </div>
             </section>
@@ -233,8 +233,8 @@ Xie, Yihui. 2015. <em>Dynamic Documents with <span>R</span> and Knitr</em>. 2nd 
           </div>
         </div>
       </div>
-<a href="index.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
-<a href="motivations.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+<a href="explain-pair-wise-comparison.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="explain-pair-wise-comparison-1.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>
@@ -265,7 +265,7 @@ gitbook.start({
 "size": 2
 },
 "edit": {
-"link": "https://github.com/rstudio/bookdown-demo/edit/master/01-intro.Rmd",
+"link": "https://github.com/rstudio/bookdown-demo/edit/master/05-references.Rmd",
 "text": "Edit"
 },
 "history": {

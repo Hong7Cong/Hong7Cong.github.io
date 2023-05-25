@@ -4,34 +4,34 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>References | Toward Severity Ranking</title>
+  <title>References | A Minimal Book Example</title>
   <meta name="description" content="This is a minimal example of using the bookdown package to write a book. The output format for this example is bookdown::gitbook." />
   <meta name="generator" content="bookdown 0.33 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="References | Toward Severity Ranking" />
+  <meta property="og:title" content="References | A Minimal Book Example" />
   <meta property="og:type" content="book" />
   
   <meta property="og:description" content="This is a minimal example of using the bookdown package to write a book. The output format for this example is bookdown::gitbook." />
   <meta name="github-repo" content="rstudio/bookdown-demo" />
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="References | Toward Severity Ranking" />
+  <meta name="twitter:title" content="References | A Minimal Book Example" />
   
   <meta name="twitter:description" content="This is a minimal example of using the bookdown package to write a book. The output format for this example is bookdown::gitbook." />
   
 
-<meta name="author" content="Hong Nguyen" />
+<meta name="author" content="Yihui Xie" />
 
 
-<meta name="date" content="2023-04-24" />
+<meta name="date" content="2023-05-25" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   
-<link rel="prev" href="explain-pair-wise-comparison-1.html"/>
-<link rel="next" href="results.html"/>
+<link rel="prev" href="future-work.html"/>
+
 <script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
@@ -155,7 +155,7 @@ div.csl-indent {
       <nav role="navigation">
 
 <ul class="summary">
-<li><a href="./">Severity Ranking</a></li>
+<li><a href="./">A Minimal Book Example</a></li>
 
 <li class="divider"></li>
 <li class="chapter" data-level="1" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i><b>1</b> Prerequisites</a></li>
@@ -164,6 +164,12 @@ div.csl-indent {
 <ul>
 <li class="chapter" data-level="3.1" data-path="motivations.html"><a href="motivations.html#context"><i class="fa fa-check"></i><b>3.1</b> Context</a></li>
 <li class="chapter" data-level="3.2" data-path="motivations.html"><a href="motivations.html#problem-statement"><i class="fa fa-check"></i><b>3.2</b> Problem statement</a></li>
+<li class="chapter" data-level="3.3" data-path="motivations.html"><a href="motivations.html#related-works"><i class="fa fa-check"></i><b>3.3</b> Related works</a></li>
+<li class="chapter" data-level="3.4" data-path="motivations.html"><a href="motivations.html#revisit-siamese-network-for-severity-ranking"><i class="fa fa-check"></i><b>3.4</b> Revisit Siamese Network for Severity Ranking</a>
+<ul>
+<li class="chapter" data-level="3.4.1" data-path="motivations.html"><a href="motivations.html#similarity-siamese-network-review"><i class="fa fa-check"></i><b>3.4.1</b> Similarity Siamese Network <em>(review)</em></a></li>
+<li class="chapter" data-level="3.4.2" data-path="motivations.html"><a href="motivations.html#preferred-siamese-network-main-focus"><i class="fa fa-check"></i><b>3.4.2</b> Preferred Siamese Network <em>(main focus)</em></a></li>
+</ul></li>
 </ul></li>
 <li class="chapter" data-level="4" data-path="images-comparison.html"><a href="images-comparison.html"><i class="fa fa-check"></i><b>4</b> Images Comparison</a>
 <ul>
@@ -176,12 +182,17 @@ div.csl-indent {
 <li class="chapter" data-level="5.1" data-path="explain-pair-wise-comparison.html"><a href="explain-pair-wise-comparison.html#p-lime"><i class="fa fa-check"></i><b>5.1</b> p-LIME</a></li>
 <li class="chapter" data-level="5.2" data-path="explain-pair-wise-comparison.html"><a href="explain-pair-wise-comparison.html#pgradcam"><i class="fa fa-check"></i><b>5.2</b> pGradCAM</a></li>
 </ul></li>
-<li class="chapter" data-level="6" data-path="final-words.html"><a href="final-words.html"><i class="fa fa-check"></i><b>6</b> Final Words</a></li>
+<li class="chapter" data-level="6" data-path="problems.html"><a href="problems.html"><i class="fa fa-check"></i><b>6</b> Problems</a>
+<ul>
+<li class="chapter" data-level="6.1" data-path="problems.html"><a href="problems.html#the-training-is-not-converged"><i class="fa fa-check"></i><b>6.1</b> The training is not converged</a></li>
+<li class="chapter" data-level="6.2" data-path="problems.html"><a href="problems.html#unbalance-datassets"><i class="fa fa-check"></i><b>6.2</b> Unbalance datassets</a></li>
+<li class="chapter" data-level="6.3" data-path="problems.html"><a href="problems.html#unaligned-unregistered-datasets"><i class="fa fa-check"></i><b>6.3</b> Unaligned Unregistered datasets</a></li>
+</ul></li>
 <li class="chapter" data-level="7" data-path="explain-pair-wise-comparison-1.html"><a href="explain-pair-wise-comparison-1.html"><i class="fa fa-check"></i><b>7</b> Explain pair-wise comparison</a></li>
+<li class="chapter" data-level="8" data-path="future-work.html"><a href="future-work.html"><i class="fa fa-check"></i><b>8</b> Future work</a></li>
 <li class="chapter" data-level="" data-path="references.html"><a href="references.html"><i class="fa fa-check"></i>References</a></li>
-<li class="chapter" data-level="8" data-path="results.html"><a href="results.html"><i class="fa fa-check"></i><b>8</b> Results</a></li>
 <li class="divider"></li>
-<li><a href="https://hong7cong.github.io/" target="blank">Return to homepage</a></li>
+<li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
 
 </ul>
 
@@ -192,7 +203,7 @@ div.csl-indent {
       <div class="body-inner">
         <div class="book-header" role="navigation">
           <h1>
-            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Toward Severity Ranking</a>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">A Minimal Book Example</a>
           </h1>
         </div>
 
@@ -203,14 +214,22 @@ div.csl-indent {
 <div id="references" class="section level1 unnumbered hasAnchor">
 <h1>References<a href="references.html#references" class="anchor-section" aria-label="Anchor link to header"></a></h1>
 
+<div id="refs" class="references csl-bib-body hanging-indent">
+<div class="csl-entry">
+Xie, Yihui. 2015. <em>Dynamic Documents with <span>R</span> and Knitr</em>. 2nd ed. Boca Raton, Florida: Chapman; Hall/CRC. <a href="http://yihui.name/knitr/">http://yihui.name/knitr/</a>.
+</div>
+<div class="csl-entry">
+———. 2023. <em>Bookdown: Authoring Books and Technical Documents with r Markdown</em>. <a href="https://CRAN.R-project.org/package=bookdown">https://CRAN.R-project.org/package=bookdown</a>.
+</div>
+</div>
 </div>
             </section>
 
           </div>
         </div>
       </div>
-<a href="explain-pair-wise-comparison-1.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
-<a href="results.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+<a href="future-work.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>
@@ -241,7 +260,7 @@ gitbook.start({
 "size": 2
 },
 "edit": {
-"link": "https://github.com/rstudio/bookdown-demo/edit/master/07-references.Rmd",
+"link": "https://github.com/rstudio/bookdown-demo/edit/master/08-references.Rmd",
 "text": "Edit"
 },
 "history": {
