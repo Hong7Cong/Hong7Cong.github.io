@@ -8,9 +8,9 @@ redirect_from:
   - /about.html
 ---
 
-I am currently ECE graduate student at University of Southern California. I am working at Center of AI for Heath, ISI at USC under supvervision of Prof. Michael Pazzani. 
+I am currently ECE graduate student at University of Southern California. I am a member of Center of AI for Heath, ISI and SAIL Lab USC under co-supvervision of Prof. Michael Pazzani and Prof. Shrikanth Narayanan.
 
-Previously, I spent one year as research assistant (RA) at IMSC Lab - USC, under supervision of Prof. Cyrus Shahabi, for the project 'Predictive Fault in Computer Network'. Half year as RA at Vinuni for a project 'Compensate non-linearity in Power Amplifier for Wireless Communication'. Half year as signal processing engineer at Viettel High Tech. One year as Research Undergrad student under a project 'Outage Rate Analysis for Massive MIMO antena system'. Yes, I am switching alot.
+Previously, I spent one year at IMSC Lab - USC, under supervision of Prof. Cyrus Shahabi, for the project 'Predictive Fault in Computer Network'. Half year as RA at Vinuni for a project 'Compensate non-linearity in Power Amplifier for Wireless Communication'. Half year as signal processing engineer at Viettel High Tech. 
 
 Research interest
 ======
