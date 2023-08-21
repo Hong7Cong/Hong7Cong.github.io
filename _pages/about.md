@@ -10,13 +10,16 @@ redirect_from:
 
 I am currently ECE graduate student at University of Southern California. I am a member of Center of AI for Heath, ISI and SAIL Lab USC under co-supvervision of Prof. Michael Pazzani and Prof. Shrikanth Narayanan.
 
-Previously, I spent one year at IMSC Lab - USC, under supervision of Prof. Cyrus Shahabi, for the project 'Predictive Fault in Computer Network'. Half year as RA at Vinuni for a project 'Compensate non-linearity in Power Amplifier for Wireless Communication'. Half year as signal processing engineer at Viettel High Tech. 
+Previously, I spent one year at IMSC Lab - USC, under supervision of Prof. Cyrus Shahabi, main contribution for the project 'Predictive Fault in Computer Network'. In 2020, I spent half of the year as research assistant at Vin University in a project 'Compensate non-linearity in Power Amplifier for Wireless Communication' and half of the year doing signal processing engineer at Viettel High Tech. 
 
 Research interest
 ======
-I'm currently interested in XAI and Computer Vision for Health.
+- Explainable AI for Health (X-rays, Fundus Images)
+- Ranking and Comparison
+- Time-series analysis
+- Foundation model for Health
 
-Contact me: hongn@usc.edu
+Contact me for potential research colab: hongn@usc.edu
 
 Personal interest
 ======
